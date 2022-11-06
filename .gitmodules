@@ -1,0 +1,3 @@
+[submodule "projects/XEN-crypto"]
+	path = projects/XEN-crypto
+	url = https://github.com/FairCrypto/XEN-crypto.git
