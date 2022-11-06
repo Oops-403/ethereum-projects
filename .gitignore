@@ -1,3 +1,14 @@
+node_modules
+.env
+coverage
+coverage.json
+typechain
+typechain-types
+
+#Hardhat files
+cache
+artifacts
+
 # Build and Release Folders
 bin-debug/
 bin-release/
@@ -12,7 +23,3 @@ bin-release/
 *.air
 *.ipa
 *.apk
-
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
