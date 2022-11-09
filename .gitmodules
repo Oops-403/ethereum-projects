@@ -4,3 +4,6 @@
 [submodule "projects/XENFT"]
 	path = projects/XENFT
 	url = https://github.com/FairCrypto/XENFT.git
+[submodule "projects/subgraph-demo-dapp"]
+	path = projects/subgraph-demo-dapp
+	url = git@github.com:dukedaily/subgraph-demo-dapp.git
