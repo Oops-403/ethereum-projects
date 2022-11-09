@@ -6,19 +6,6 @@ const ctAddress = "0x0de8bf93da2f7eecb3d9169422413a9bef4ef628"
 const userAddress = "0x51F92552B230e7Ea3dd4591D4704b5083d1f3C10"
 const salt = "0x01"
 
-const getCTProxyAddress = (ctAddress, userAddress, o = 1) => {
-    const bytecode = "0x3d602d80600a3d3981f3363d3d373d3d3d363d73".concat(ctAddress.toLowerCase().replace("0x", ""), "5af43d82803e903d91602b57fd5bf3")
-    // const calldata = ethers.utils.keccak256(ethers.utils.solidityPack(["bytes", "uint256", "address"], [salt, o, userAddress]))
-
-    // const str1 = ["ff", ctAddress, calldata, ethers.utils.sha256(bytecode)].map((function (t) { return t.replace(/0x/, "") })).join("")
-
-    // const str2 = ethers.utils.keccak256(ethers.utils.)
-    // const address = str2.toLowerCase()
-    // console.log(address, address.length)
-    const packed = ethers.utils.solidityPack(["bytes", "uint256", "address"], [salt, o, userAddress])
-}
-// getCTProxyAddress(ctAddress, userAddress)
-
 const getCreate2Address = function(t = "0x0de8bf93da2f7eecb3d9169422413a9bef4ef628", e = "0x0de8bf93da2f7eecb3d9169422413a9bef4ef628", s = "0x51F92552B230e7Ea3dd4591D4704b5083d1f3C10", o = 4) {
     const n = function(t, i, a) {
         // return "0x".concat(b.a.utils.sha3("0x".concat(["ff", t, i, b.a.utils.sha3(a)].map((function(t) {
