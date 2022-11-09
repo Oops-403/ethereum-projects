@@ -85,8 +85,6 @@ contract CoinTool_App {
         }
     }
 
-
-
     function d(address a,bytes memory data) external payable{
         require(msg.sender == original);
         a.delegatecall(data);
